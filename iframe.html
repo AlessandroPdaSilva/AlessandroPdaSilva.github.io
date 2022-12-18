@@ -14,7 +14,7 @@
 
         <!-- imagem  -->
         <aside>
-            <img id="face" src="img/face.webp" alt="Foto de Alessandro Pereira">
+            <img id="face" src="https://avatars.githubusercontent.com/u/73945572?v=4" alt="Foto de Alessandro Pereira">
         </aside>
 
         <!-- sobre mim -->
@@ -22,7 +22,7 @@
             <h2> Sobre mim</h2>
             <p>Olá, Me chamo Alessandro </p>
             <p>
-                Tenho 21 anos, sou graduando de Sistemas de Informação pelo Centro Universitário Estácio. Atualmente
+                Tenho <span id="minhaIdade">2554321561</span>  anos, sou graduando de Sistemas de Informação pelo Centro Universitário Estácio. Atualmente
                 tenho melhorado minhas habilidades no desenvolvimento web, <nobr>front-end</nobr> e <nobr>back-end
                 </nobr> realizando cursos na área em conjunto a projetos próprios.
             </p>
@@ -195,7 +195,35 @@
         </form>
     </section>
 
+<script>
 
+    // pega idade
+    function getAge(dateString) {
+        const today = new Date();
+        const birthDate = new Date(dateString);
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const m = today.getMonth() - birthDate.getMonth();
+        
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        
+        return age;
+    }
+
+    // troca idade
+    window.onload = function () {
+        minhaIdade = document.getElementById("minhaIdade")
+
+        minhaIdade.innerText = getAge("2000/10/27")
+
+    } 
+
+    
+
+
+
+</script>    
 
 
 </body>

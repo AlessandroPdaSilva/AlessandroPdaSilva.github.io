@@ -30,8 +30,10 @@ a{
 }
 
     img#face{
-        width: 100%;
+        width: 80%;
         border-radius: 2em;
+
+        margin: 0% 0% 0% auto; 
     }
 
 
@@ -68,6 +70,8 @@ a{
     .info aside{
         width: auto;
         margin: 0% auto;
+        display: flex;
+        flex-direction: column;
     }
 
 
