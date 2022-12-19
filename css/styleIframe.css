@@ -204,8 +204,10 @@ a{
 
         /* imagem do bloco */
         .bloco img{
-            width: fit-content;
+            width: 153px;
+            height: 153px;
             border-radius: 10px;
+
         }
 
         /* respons 1 */
@@ -253,7 +255,8 @@ a{
             }
     
             .bloco img{
-                width: fit-content;
+                width: 153px;
+                height: 153px;
                 border-radius: 10px;
             }
 
@@ -300,6 +303,7 @@ a{
 
             .bloco img{
                 width: 30%;
+                height: auto;
             }
 
             .bloco p{
@@ -348,6 +352,7 @@ a{
 
             .bloco img{
                 width: 30%;
+                height: auto;
             }
 
             .bloco p{
